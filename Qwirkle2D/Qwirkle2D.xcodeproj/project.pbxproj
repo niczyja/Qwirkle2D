@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5261CB632B3CD30E0056AE26 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5261CB622B3CD30E0056AE26 /* main.c */; };
-		5261CB6B2B3CD3960056AE26 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5261CB6A2B3CD3960056AE26 /* SDL2.framework */; };
-		5261CB6C2B3CD3960056AE26 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5261CB6A2B3CD3960056AE26 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5265E8B92B3CE37C00313603 /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = 5265E8B82B3CE37C00313603 /* input.c */; };
+		5265E8BB2B3CE41000313603 /* draw.c in Sources */ = {isa = PBXBuildFile; fileRef = 5265E8BA2B3CE41000313603 /* draw.c */; };
+		5265E8BD2B3CE4BB00313603 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = 5265E8BC2B3CE4BB00313603 /* init.c */; };
+		5265E8BE2B3CED4900313603 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5265E8B32B3CE1E000313603 /* SDL2.framework */; };
+		5265E8BF2B3CED4900313603 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5265E8B32B3CE1E000313603 /* SDL2.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		527B3E732B3CD58300BA5472 /* QwirkleKit in Frameworks */ = {isa = PBXBuildFile; productRef = 527B3E722B3CD58300BA5472 /* QwirkleKit */; };
 /* End PBXBuildFile section */
 
@@ -23,13 +26,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
-		5261CB6D2B3CD3960056AE26 /* Embed Frameworks */ = {
+		5265E8B22B3CE18700313603 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 10;
+			dstSubfolderSpec = 11;
 			files = (
-				5261CB6C2B3CD3960056AE26 /* SDL2.framework in Embed Frameworks */,
+				5265E8BF2B3CED4900313603 /* SDL2.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,7 +42,16 @@
 /* Begin PBXFileReference section */
 		5261CB5F2B3CD30E0056AE26 /* Qwirkle2D */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Qwirkle2D; sourceTree = BUILT_PRODUCTS_DIR; };
 		5261CB622B3CD30E0056AE26 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		5261CB6A2B3CD3960056AE26 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = "<group>"; };
+		5265E8A92B3CDEC000313603 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		5265E8AA2B3CDEE100313603 /* defs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defs.h; sourceTree = "<group>"; };
+		5265E8AB2B3CE00A00313603 /* structs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = structs.h; sourceTree = "<group>"; };
+		5265E8B32B3CE1E000313603 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = "<group>"; };
+		5265E8B52B3CE2D700313603 /* init.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = init.h; sourceTree = "<group>"; };
+		5265E8B62B3CE2FD00313603 /* draw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = draw.h; sourceTree = "<group>"; };
+		5265E8B72B3CE33000313603 /* input.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = input.h; sourceTree = "<group>"; };
+		5265E8B82B3CE37C00313603 /* input.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = input.c; sourceTree = "<group>"; };
+		5265E8BA2B3CE41000313603 /* draw.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = draw.c; sourceTree = "<group>"; };
+		5265E8BC2B3CE4BB00313603 /* init.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = init.c; sourceTree = "<group>"; };
 		527B3E712B3CD55300BA5472 /* QwirkleKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = QwirkleKit; path = ../../QwirkleKit/QwirkleKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,8 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5261CB6B2B3CD3960056AE26 /* SDL2.framework in Frameworks */,
 				527B3E732B3CD58300BA5472 /* QwirkleKit in Frameworks */,
+				5265E8BE2B3CED4900313603 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +89,16 @@
 		5261CB612B3CD30E0056AE26 /* Qwirkle2D */ = {
 			isa = PBXGroup;
 			children = (
+				5265E8AA2B3CDEE100313603 /* defs.h */,
+				5265E8AB2B3CE00A00313603 /* structs.h */,
+				5265E8A92B3CDEC000313603 /* common.h */,
 				5261CB622B3CD30E0056AE26 /* main.c */,
+				5265E8B52B3CE2D700313603 /* init.h */,
+				5265E8BC2B3CE4BB00313603 /* init.c */,
+				5265E8B62B3CE2FD00313603 /* draw.h */,
+				5265E8BA2B3CE41000313603 /* draw.c */,
+				5265E8B72B3CE33000313603 /* input.h */,
+				5265E8B82B3CE37C00313603 /* input.c */,
 			);
 			path = Qwirkle2D;
 			sourceTree = "<group>";
@@ -85,7 +106,7 @@
 		5261CB692B3CD3960056AE26 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5261CB6A2B3CD3960056AE26 /* SDL2.framework */,
+				5265E8B32B3CE1E000313603 /* SDL2.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -100,7 +121,7 @@
 				5261CB5B2B3CD30E0056AE26 /* Sources */,
 				5261CB5C2B3CD30E0056AE26 /* Frameworks */,
 				5261CB5D2B3CD30E0056AE26 /* CopyFiles */,
-				5261CB6D2B3CD3960056AE26 /* Embed Frameworks */,
+				5265E8B22B3CE18700313603 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,7 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5265E8B92B3CE37C00313603 /* input.c in Sources */,
+				5265E8BB2B3CE41000313603 /* draw.c in Sources */,
 				5261CB632B3CD30E0056AE26 /* main.c in Sources */,
+				5265E8BD2B3CE4BB00313603 /* init.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
