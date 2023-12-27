@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5261CB632B3CD30E0056AE26 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5261CB622B3CD30E0056AE26 /* main.c */; };
+		5261CB6B2B3CD3960056AE26 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5261CB6A2B3CD3960056AE26 /* SDL2.framework */; };
+		5261CB6C2B3CD3960056AE26 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5261CB6A2B3CD3960056AE26 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,11 +22,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		5261CB6D2B3CD3960056AE26 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5261CB6C2B3CD3960056AE26 /* SDL2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5261CB5F2B3CD30E0056AE26 /* Qwirkle2D */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Qwirkle2D; sourceTree = BUILT_PRODUCTS_DIR; };
 		5261CB622B3CD30E0056AE26 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		5261CB6A2B3CD3960056AE26 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5261CB6B2B3CD3960056AE26 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +58,7 @@
 			children = (
 				5261CB612B3CD30E0056AE26 /* Qwirkle2D */,
 				5261CB602B3CD30E0056AE26 /* Products */,
+				5261CB692B3CD3960056AE26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +78,14 @@
 			path = Qwirkle2D;
 			sourceTree = "<group>";
 		};
+		5261CB692B3CD3960056AE26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5261CB6A2B3CD3960056AE26 /* SDL2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -72,6 +96,7 @@
 				5261CB5B2B3CD30E0056AE26 /* Sources */,
 				5261CB5C2B3CD30E0056AE26 /* Frameworks */,
 				5261CB5D2B3CD30E0056AE26 /* CopyFiles */,
+				5261CB6D2B3CD3960056AE26 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -245,6 +270,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -253,6 +282,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
