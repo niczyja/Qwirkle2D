@@ -10,6 +10,7 @@
 		5261CB632B3CD30E0056AE26 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5261CB622B3CD30E0056AE26 /* main.c */; };
 		5261CB6B2B3CD3960056AE26 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5261CB6A2B3CD3960056AE26 /* SDL2.framework */; };
 		5261CB6C2B3CD3960056AE26 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5261CB6A2B3CD3960056AE26 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		527B3E732B3CD58300BA5472 /* QwirkleKit in Frameworks */ = {isa = PBXBuildFile; productRef = 527B3E722B3CD58300BA5472 /* QwirkleKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,7 @@
 		5261CB5F2B3CD30E0056AE26 /* Qwirkle2D */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Qwirkle2D; sourceTree = BUILT_PRODUCTS_DIR; };
 		5261CB622B3CD30E0056AE26 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		5261CB6A2B3CD3960056AE26 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = "<group>"; };
+		527B3E712B3CD55300BA5472 /* QwirkleKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = QwirkleKit; path = ../../QwirkleKit/QwirkleKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5261CB6B2B3CD3960056AE26 /* SDL2.framework in Frameworks */,
+				527B3E732B3CD58300BA5472 /* QwirkleKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				5261CB612B3CD30E0056AE26 /* Qwirkle2D */,
+				527B3E712B3CD55300BA5472 /* QwirkleKit */,
 				5261CB602B3CD30E0056AE26 /* Products */,
 				5261CB692B3CD3960056AE26 /* Frameworks */,
 			);
@@ -103,6 +107,9 @@
 			dependencies = (
 			);
 			name = Qwirkle2D;
+			packageProductDependencies = (
+				527B3E722B3CD58300BA5472 /* QwirkleKit */,
+			);
 			productName = Qwirkle2D;
 			productReference = 5261CB5F2B3CD30E0056AE26 /* Qwirkle2D */;
 			productType = "com.apple.product-type.tool";
@@ -312,6 +319,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		527B3E722B3CD58300BA5472 /* QwirkleKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = QwirkleKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5261CB572B3CD30E0056AE26 /* Project object */;
 }
