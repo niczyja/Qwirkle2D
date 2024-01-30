@@ -27,6 +27,7 @@
 		524B702F2B6902630082DB3D /* Qwirkle2D */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Qwirkle2D; sourceTree = BUILT_PRODUCTS_DIR; };
 		524B70322B6902630082DB3D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		524B703D2B69033F0082DB3D /* QwirkleKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = QwirkleKit; path = ../../QwirkleKit/QwirkleKit; sourceTree = "<group>"; };
+		524B70462B6912E10082DB3D /* SDL2 */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SDL2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +47,7 @@
 			children = (
 				524B70312B6902630082DB3D /* Qwirkle2D */,
 				524B703D2B69033F0082DB3D /* QwirkleKit */,
+				524B70462B6912E10082DB3D /* SDL2 */,
 				524B70302B6902630082DB3D /* Products */,
 				524B703A2B6902E10082DB3D /* Frameworks */,
 			);
